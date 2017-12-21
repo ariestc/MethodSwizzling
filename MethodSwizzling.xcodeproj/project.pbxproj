@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910878D81FEBD09600C7A1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 910878D71FEBD09600C7A1AB /* AppDelegate.m */; };
+		910878DB1FEBD09600C7A1AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910878DA1FEBD09600C7A1AB /* ViewController.m */; };
+		910878DE1FEBD09600C7A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910878DC1FEBD09600C7A1AB /* Main.storyboard */; };
+		910878E01FEBD09600C7A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910878DF1FEBD09600C7A1AB /* Assets.xcassets */; };
+		910878E31FEBD09600C7A1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910878E11FEBD09600C7A1AB /* LaunchScreen.storyboard */; };
+		910878E61FEBD09600C7A1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 910878E51FEBD09600C7A1AB /* main.m */; };
+		910878F01FEBD09600C7A1AB /* MethodSwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 910878EF1FEBD09600C7A1AB /* MethodSwizzlingTests.m */; };
+		910878FB1FEBD09600C7A1AB /* MethodSwizzlingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 910878FA1FEBD09600C7A1AB /* MethodSwizzlingUITests.m */; };
+		9108790A1FEBD10D00C7A1AB /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 910879091FEBD10C00C7A1AB /* NSObject+Swizzling.m */; };
+		910879101FEBD80300C7A1AB /* NSArray+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9108790F1FEBD80300C7A1AB /* NSArray+SwizzleMethod.m */; };
+		91DF996D1FEC099700F7E34E /* image in Resources */ = {isa = PBXBuildFile; fileRef = 91DF991C1FEC029F00F7E34E /* image */; };
+		91DF996F1FEC0AE700F7E34E /* new_timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 91DF996E1FEC0AD200F7E34E /* new_timg.jpeg */; };
+		91DF99721FEC0B0F00F7E34E /* UIImage+swizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DF99711FEC0B0F00F7E34E /* UIImage+swizzleMethod.m */; };
+		91F822371FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F822361FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.m */; };
+		91F8223A1FEBF6FE00E70C2F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F822391FEBF6FE00E70C2F /* MyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		910878EC1FEBD09600C7A1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 910878CB1FEBD09600C7A1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 910878D21FEBD09600C7A1AB;
+			remoteInfo = MethodSwizzling;
+		};
+		910878F71FEBD09600C7A1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 910878CB1FEBD09600C7A1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 910878D21FEBD09600C7A1AB;
+			remoteInfo = MethodSwizzling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		910878D31FEBD09600C7A1AB /* MethodSwizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MethodSwizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		910878D61FEBD09600C7A1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		910878D71FEBD09600C7A1AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		910878D91FEBD09600C7A1AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		910878DA1FEBD09600C7A1AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		910878DD1FEBD09600C7A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		910878DF1FEBD09600C7A1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		910878E21FEBD09600C7A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		910878E41FEBD09600C7A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910878E51FEBD09600C7A1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		910878EB1FEBD09600C7A1AB /* MethodSwizzlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MethodSwizzlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		910878EF1FEBD09600C7A1AB /* MethodSwizzlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingTests.m; sourceTree = "<group>"; };
+		910878F11FEBD09600C7A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910878F61FEBD09600C7A1AB /* MethodSwizzlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MethodSwizzlingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		910878FA1FEBD09600C7A1AB /* MethodSwizzlingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingUITests.m; sourceTree = "<group>"; };
+		910878FC1FEBD09600C7A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910879081FEBD10C00C7A1AB /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		910879091FEBD10C00C7A1AB /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		9108790E1FEBD80300C7A1AB /* NSArray+SwizzleMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SwizzleMethod.h"; sourceTree = "<group>"; };
+		9108790F1FEBD80300C7A1AB /* NSArray+SwizzleMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SwizzleMethod.m"; sourceTree = "<group>"; };
+		91DF991C1FEC029F00F7E34E /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		91DF996E1FEC0AD200F7E34E /* new_timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_timg.jpeg; sourceTree = "<group>"; };
+		91DF99701FEC0B0F00F7E34E /* UIImage+swizzleMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+swizzleMethod.h"; sourceTree = "<group>"; };
+		91DF99711FEC0B0F00F7E34E /* UIImage+swizzleMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+swizzleMethod.m"; sourceTree = "<group>"; };
+		91F822351FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwizzleMethod.h"; sourceTree = "<group>"; };
+		91F822361FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwizzleMethod.m"; sourceTree = "<group>"; };
+		91F822381FEBF6FE00E70C2F /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		91F822391FEBF6FE00E70C2F /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		910878D01FEBD09600C7A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878E81FEBD09600C7A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878F31FEBD09600C7A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		910878CA1FEBD09600C7A1AB = {
+			isa = PBXGroup;
+			children = (
+				910878D51FEBD09600C7A1AB /* MethodSwizzling */,
+				910878EE1FEBD09600C7A1AB /* MethodSwizzlingTests */,
+				910878F91FEBD09600C7A1AB /* MethodSwizzlingUITests */,
+				910878D41FEBD09600C7A1AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		910878D41FEBD09600C7A1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				910878D31FEBD09600C7A1AB /* MethodSwizzling.app */,
+				910878EB1FEBD09600C7A1AB /* MethodSwizzlingTests.xctest */,
+				910878F61FEBD09600C7A1AB /* MethodSwizzlingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910878D51FEBD09600C7A1AB /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				910879081FEBD10C00C7A1AB /* NSObject+Swizzling.h */,
+				910879091FEBD10C00C7A1AB /* NSObject+Swizzling.m */,
+				910878D61FEBD09600C7A1AB /* AppDelegate.h */,
+				910878D71FEBD09600C7A1AB /* AppDelegate.m */,
+				910878D91FEBD09600C7A1AB /* ViewController.h */,
+				910878DA1FEBD09600C7A1AB /* ViewController.m */,
+				91F822381FEBF6FE00E70C2F /* MyViewController.h */,
+				91F822391FEBF6FE00E70C2F /* MyViewController.m */,
+				910878DC1FEBD09600C7A1AB /* Main.storyboard */,
+				9108790E1FEBD80300C7A1AB /* NSArray+SwizzleMethod.h */,
+				9108790F1FEBD80300C7A1AB /* NSArray+SwizzleMethod.m */,
+				91F822351FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.h */,
+				91F822361FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.m */,
+				91DF99701FEC0B0F00F7E34E /* UIImage+swizzleMethod.h */,
+				91DF99711FEC0B0F00F7E34E /* UIImage+swizzleMethod.m */,
+				91DF996E1FEC0AD200F7E34E /* new_timg.jpeg */,
+				910878DF1FEBD09600C7A1AB /* Assets.xcassets */,
+				910878E11FEBD09600C7A1AB /* LaunchScreen.storyboard */,
+				91DF991C1FEC029F00F7E34E /* image */,
+				910878E41FEBD09600C7A1AB /* Info.plist */,
+				910878E51FEBD09600C7A1AB /* main.m */,
+			);
+			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
+		910878EE1FEBD09600C7A1AB /* MethodSwizzlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				910878EF1FEBD09600C7A1AB /* MethodSwizzlingTests.m */,
+				910878F11FEBD09600C7A1AB /* Info.plist */,
+			);
+			path = MethodSwizzlingTests;
+			sourceTree = "<group>";
+		};
+		910878F91FEBD09600C7A1AB /* MethodSwizzlingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				910878FA1FEBD09600C7A1AB /* MethodSwizzlingUITests.m */,
+				910878FC1FEBD09600C7A1AB /* Info.plist */,
+			);
+			path = MethodSwizzlingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		910878D21FEBD09600C7A1AB /* MethodSwizzling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910878FF1FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzling" */;
+			buildPhases = (
+				910878CF1FEBD09600C7A1AB /* Sources */,
+				910878D01FEBD09600C7A1AB /* Frameworks */,
+				910878D11FEBD09600C7A1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MethodSwizzling;
+			productName = MethodSwizzling;
+			productReference = 910878D31FEBD09600C7A1AB /* MethodSwizzling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		910878EA1FEBD09600C7A1AB /* MethodSwizzlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910879021FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzlingTests" */;
+			buildPhases = (
+				910878E71FEBD09600C7A1AB /* Sources */,
+				910878E81FEBD09600C7A1AB /* Frameworks */,
+				910878E91FEBD09600C7A1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				910878ED1FEBD09600C7A1AB /* PBXTargetDependency */,
+			);
+			name = MethodSwizzlingTests;
+			productName = MethodSwizzlingTests;
+			productReference = 910878EB1FEBD09600C7A1AB /* MethodSwizzlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		910878F51FEBD09600C7A1AB /* MethodSwizzlingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910879051FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzlingUITests" */;
+			buildPhases = (
+				910878F21FEBD09600C7A1AB /* Sources */,
+				910878F31FEBD09600C7A1AB /* Frameworks */,
+				910878F41FEBD09600C7A1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				910878F81FEBD09600C7A1AB /* PBXTargetDependency */,
+			);
+			name = MethodSwizzlingUITests;
+			productName = MethodSwizzlingUITests;
+			productReference = 910878F61FEBD09600C7A1AB /* MethodSwizzlingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		910878CB1FEBD09600C7A1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = wangliang;
+				TargetAttributes = {
+					910878D21FEBD09600C7A1AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					910878EA1FEBD09600C7A1AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 910878D21FEBD09600C7A1AB;
+					};
+					910878F51FEBD09600C7A1AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 910878D21FEBD09600C7A1AB;
+					};
+				};
+			};
+			buildConfigurationList = 910878CE1FEBD09600C7A1AB /* Build configuration list for PBXProject "MethodSwizzling" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 910878CA1FEBD09600C7A1AB;
+			productRefGroup = 910878D41FEBD09600C7A1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				910878D21FEBD09600C7A1AB /* MethodSwizzling */,
+				910878EA1FEBD09600C7A1AB /* MethodSwizzlingTests */,
+				910878F51FEBD09600C7A1AB /* MethodSwizzlingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		910878D11FEBD09600C7A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DF996F1FEC0AE700F7E34E /* new_timg.jpeg in Resources */,
+				91DF996D1FEC099700F7E34E /* image in Resources */,
+				910878E31FEBD09600C7A1AB /* LaunchScreen.storyboard in Resources */,
+				910878E01FEBD09600C7A1AB /* Assets.xcassets in Resources */,
+				910878DE1FEBD09600C7A1AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878E91FEBD09600C7A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878F41FEBD09600C7A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		910878CF1FEBD09600C7A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F822371FEBF6CD00E70C2F /* UIViewController+SwizzleMethod.m in Sources */,
+				910878DB1FEBD09600C7A1AB /* ViewController.m in Sources */,
+				910878E61FEBD09600C7A1AB /* main.m in Sources */,
+				910878D81FEBD09600C7A1AB /* AppDelegate.m in Sources */,
+				9108790A1FEBD10D00C7A1AB /* NSObject+Swizzling.m in Sources */,
+				910879101FEBD80300C7A1AB /* NSArray+SwizzleMethod.m in Sources */,
+				91F8223A1FEBF6FE00E70C2F /* MyViewController.m in Sources */,
+				91DF99721FEC0B0F00F7E34E /* UIImage+swizzleMethod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878E71FEBD09600C7A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910878F01FEBD09600C7A1AB /* MethodSwizzlingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910878F21FEBD09600C7A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910878FB1FEBD09600C7A1AB /* MethodSwizzlingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		910878ED1FEBD09600C7A1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 910878D21FEBD09600C7A1AB /* MethodSwizzling */;
+			targetProxy = 910878EC1FEBD09600C7A1AB /* PBXContainerItemProxy */;
+		};
+		910878F81FEBD09600C7A1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 910878D21FEBD09600C7A1AB /* MethodSwizzling */;
+			targetProxy = 910878F71FEBD09600C7A1AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		910878DC1FEBD09600C7A1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910878DD1FEBD09600C7A1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		910878E11FEBD09600C7A1AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910878E21FEBD09600C7A1AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		910878FD1FEBD09600C7A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		910878FE1FEBD09600C7A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		910879001FEBD09600C7A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		910879011FEBD09600C7A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		910879031FEBD09600C7A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MethodSwizzling.app/MethodSwizzling";
+			};
+			name = Debug;
+		};
+		910879041FEBD09600C7A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MethodSwizzling.app/MethodSwizzling";
+			};
+			name = Release;
+		};
+		910879061FEBD09600C7A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MethodSwizzling;
+			};
+			name = Debug;
+		};
+		910879071FEBD09600C7A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8NTG5JSM4;
+				INFOPLIST_FILE = MethodSwizzlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MethodSwizzlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MethodSwizzling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		910878CE1FEBD09600C7A1AB /* Build configuration list for PBXProject "MethodSwizzling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910878FD1FEBD09600C7A1AB /* Debug */,
+				910878FE1FEBD09600C7A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910878FF1FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910879001FEBD09600C7A1AB /* Debug */,
+				910879011FEBD09600C7A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910879021FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910879031FEBD09600C7A1AB /* Debug */,
+				910879041FEBD09600C7A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910879051FEBD09600C7A1AB /* Build configuration list for PBXNativeTarget "MethodSwizzlingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910879061FEBD09600C7A1AB /* Debug */,
+				910879071FEBD09600C7A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 910878CB1FEBD09600C7A1AB /* Project object */;
+}
